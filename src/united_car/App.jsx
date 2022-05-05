@@ -30,7 +30,7 @@ const App = function () {
     change.style.display = "none";
     change = document.querySelector(".about_data");
     change.style.display = "block";
-  }
+  }vcxv
 
   let showFormDataAgain = () => {
     let createaccount = document.querySelector(".main_account_create");
