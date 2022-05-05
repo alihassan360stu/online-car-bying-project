@@ -1,0 +1,653 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-size: 1.4vw;
+  font-family: serif;
+  color: white;
+}
+
+.main-menu-option{
+  min-height: 100vh;
+  background-image: url("/src/united_car/back.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.header{
+width: 100%;
+height: 10vh;
+background-color: brown;
+position: static;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.menu_option{
+  display: flex;
+  width: 70%;
+  height: 10vh;
+  align-items: center;
+  position: relative;
+}
+.menu_option li{
+  display: inline-block;
+  list-style: none;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+  text-transform: capitalize;
+}
+.main-menu-option ul  :hover .fa {
+  cursor: pointer;
+  color: black;
+}
+.main-menu-option ul  :hover{
+  cursor: pointer;
+  border-bottom: 3px solid rgb(7, 5, 5);
+  color: black;
+}
+
+.logo{
+  position: relative;
+  width: 13%;
+  height: 15vh;
+  color: black;
+  opacity: .7;
+  z-index: 22;
+  top: 2vh;
+}
+.search{
+width: 10%;
+color: black;
+}
+.sign_in{
+color: black;
+  width: 8%;
+  margin-left: 2vw;
+  position: relative;
+  /* font-size: .5vw; */
+}
+.sign_in h1{
+  font-size: 1.5vw;
+}
+.sign_in h1:hover{
+  cursor: pointer;
+  border-bottom: 3px solid rgb(7, 5, 5);
+  color: black;
+}
+ .sign_in h1:hover .fa
+{
+  cursor: pointer;
+  color: black; 
+}
+.fa{
+  font-size: 1.4vw;
+}
+.image_setting{
+  opacity: .9;
+  display: block;
+  width: 90%;
+  height: 80vh;
+  position: absolute;
+  top: 15vh;
+  right: 5vw;
+  z-index: 1;
+  transition: 300ms;
+  box-shadow: 2px 2px 2px 3px gray;
+}
+.next_move{
+  width: 20vw;
+  height: 2vh;
+  position: absolute;
+  top: 50vh;
+  left: 10vw;
+  z-index: 8;
+
+}
+.back_move{
+  position: relative;
+  width: 20vw;
+  height: 2vh;
+  position: absolute;
+  top: 52vh;
+  left: 80vw;
+  z-index: 8;
+}
+.back_move .fa-angle-right
+{
+  position: absolute;
+  left: 8vw;
+}
+.both_left_right{
+  font-size: 5vw;
+  width: 10vw;
+  height: 10vh;
+  text-shadow: 3px 3px 2px  black;
+}
+.both_left_right:hover{
+  color: blue;
+  transition: 600ms;
+  cursor: pointer;
+}
+.all_circle{
+  position: absolute;
+  bottom: 10vh;
+  left: 42vw;
+  z-index: 8;
+}
+.all_circle .fa-circle{
+  margin-left: 2vw;
+  text-shadow: 3px 3px 2px  black;
+  transition: 300ms;
+}
+.sub_menu{
+  position: relative;
+}
+.sub_menu ul{
+display: none;
+}
+.c1{color: blue;}
+.sub_menu:hover.sub_menu ul
+{
+  display: block;
+  position: absolute;
+   padding-top: 3vh;
+   padding-bottom: 3vh;
+   top: 4vh;
+  width: 15vw;
+  background-color: brown;
+  z-index: 5;
+}
+.sub_menu ul li{
+  letter-spacing: 2px;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+}
+
+.form_data{
+  display: none;
+  position: relative;
+  width: 30vw;
+  height: 36vh;
+  background-color: rgba(11, 225, 253, 0.5);
+  position: absolute;
+  right: 1.3vw;
+  top: 11.5vh;
+  z-index: 9;
+  box-shadow: 2px 2px 2px 3px gray;
+
+}
+.email_pass
+{
+  margin-top: 4vh;
+  margin-left: 2vw;
+  margin-bottom: 5vw;
+}
+
+.email_pass input{
+  margin-top: 4vh;
+  width: 15vw;
+  height: 6vh;
+  color: black;
+  margin-left: 2vw;
+}
+.span_cross
+{
+position: absolute;
+display: none;
+z-index: 13;
+top: 1vh;
+right: 1vw;
+}
+.span_cross .fa
+{
+  font-size: 2vw;
+  color: red;
+}
+.span_cross :hover{
+   box-shadow: 2px 2px 2px 2px black;
+}
+.span_cross input{
+  padding:2px 2px 2px 2px;
+}
+.email_pass span{
+  margin-top: 5vh;
+position: absolute;
+bottom: 4vh;
+left: 2vw;
+}
+.email_pass span:hover
+{
+  text-shadow: 2px 2px 2px black;
+  cursor: pointer;
+}
+span button{
+  position: absolute;
+  width: 5vw;
+  height: 5vh;
+  background-color: chartreuse;
+  color: white;
+  left: 18vw;
+  bottom: 0vh;
+}
+span button:hover{
+  box-shadow: 2px 2px 2px 2px black;
+}
+.main_account_create{
+  display: none;
+}
+.main_account_create{
+  position: relative;
+  width: 60vw;
+  height: 60vh;
+  left: 20vw;
+  top: 21vh;
+  background-color: rgba(5, 105, 235, 0.7);
+  box-shadow: 2px 2px 2px 2px black;
+  color: black;
+  position: absolute;
+  z-index: 120;
+}
+.main_account_create h1{
+  top: 3vh;
+  font-size: 2vw;
+  color: white;
+  position: absolute;
+  left: 21vw;
+  text-shadow: 1px 1px 1px gray;
+}
+.new_account{
+  position: absolute;
+  left: 15vw;
+  bottom: 2vh;
+}
+.same{
+  position: absolute;
+  top: 15vh;
+  left:4vw;
+}
+.same label{
+  font-size: 2vw;
+  margin-left:1.5vw;
+}
+.btn_name{
+  width: 15vw;
+  height: 5vh;
+  margin-left:1.5vw;
+  color: black;
+  padding: 5px 5px 5px 10px;
+  border-radius: 5%;
+}
+.same1{
+  position: absolute;
+  left: 32vw;
+}
+.same2{
+  position: absolute;
+  top: 25vh;
+  left: 32vw;
+}
+.same4{
+  position: absolute;
+  top: 25vh;
+  left: 4vw;
+}
+.same5{
+  position: absolute;
+  top: 35vh;
+  left: 4vw;
+  color: black;
+}
+.same6{
+  position: absolute;
+  top: 35vh;
+  left: 32vw;
+  color: black;
+}
+.same3{
+  position: absolute;
+  left: 1vw;
+  top: 53vh;
+}
+.same3 label{
+  font-size: 1.4vw;
+}
+.radio{
+  width: 3vw;
+  height: 3vh;
+}
+.gebder{
+  color: black;
+  background-color: black;
+}
+.main_account_create i{
+  position: absolute;
+  right: 1vw;
+  top: 2vh;
+  font-size: 2.5vw;
+  color: red;
+}
+.main_account_create i:hover{
+  text-shadow: 2px 2px 2px black;
+}
+.emai{
+  color: black;
+}
+.password{
+  color: black;
+}
+.change{
+  position: absolute;
+  left: 21vw;
+  top: 2vh;
+  font-size: 2vw;
+}
+.logout{
+  display: none;
+  position: absolute;
+  top: 1.2vh;
+  left: 1.5vw;
+  font-size: 1vw;
+  z-index: 22;
+}
+.logout h1{
+  color: black;
+}
+.logout h1:hover{
+cursor: pointer;
+font-weight: 900;
+color:blue;
+  top: 1.3vh;
+  text-shadow: 2px 2px 2px black;
+}
+.new_account button{
+  border-radius: 12%;
+}
+.li_audi{
+  position: relative;
+}
+.Audi_car_container{
+  display: none;
+
+  position: absolute;
+  width: 100vw;
+  min-height: 90vh;
+  background-color: lightslategrey;
+  top: 10vh;
+  left: -0vw;
+}
+.to_hide_background_pic{
+  display: block;
+}
+.image_style {
+  width: 40vw;
+  height: 50vh;
+  background-color: brown;
+  margin-left: 7vw;
+  margin-top: 10vh;
+  color: black;
+  display: inline-block;
+  box-shadow: 2px 2px 2px 2px black;
+  border-radius: 2%;
+  position: relative;
+  /* display: none; */
+
+}
+.image_style img{
+  border-radius:2%;
+  width: 40vw;
+  height: 40vh;
+  position: absolute;
+}
+.text_details{
+  position: relative;
+  display: none;
+}
+.image_style:hover .text_details{ 
+  display: block;
+  position: absolute;
+  background-color:rgba(211, 202, 202, 0.9);
+  z-index: 45;
+  width: 40vw;
+  height: 50vh;
+  border-radius: 2%;
+  }
+  .image_style h1{
+    text-transform: uppercase;
+   position: absolute;
+   bottom: 2.4vh;
+   width: 40vw;
+   text-align: center;
+   letter-spacing: 6px;
+   word-spacing: 5px;
+   font-size: 2vw;
+   text-shadow: 2px 2px 2px gray;
+ }
+
+ .image_style:hover  .pic_card_text{
+   position: absolute;
+   color: black;
+   left: 1vw;
+ }
+
+ .image_style :hover .pic_card_text1{
+   top: 2vw;
+ }
+ .image_style :hover .pic_card_text2{
+  top: 6vw;
+}
+.image_style :hover .pic_card_text3{
+  top: 10vw;
+}
+.image_style :hover .pic_card_text4{
+  top: 14vw;
+  
+}
+.image_style :hover .pic_card_text5{
+  top: 18vw;
+}
+.pic_card_text span{
+  padding-bottom: 1vh;
+  /* border-bottom: 2px solid green; */
+  font-size: 1.5vw;
+  color: chocolate;
+}
+.image_style :hover  button{
+  position: absolute;
+  bottom: 2vh;
+  right: 4vw;
+  width: 9vw;
+  height: 8vh;
+  background-color: darkgreen;
+  box-shadow: 2px 2px 2px 2px rgb(37, 3, 3); 
+  font-size: 2vw;
+  cursor: pointer;
+}
+.image_style button :hover
+{
+  box-shadow: 2px 2px 2px 5px black;
+  background-color: brown;
+}
+.image_style :hover .pic_card_text6{
+  position: absolute;
+  width: 20vw;
+  height: 20vh;
+  right: 1vw;
+  bottom: 5vh;
+}
+.extra_space{
+  width: 100vw;
+  height: 90vh;
+}
+.about_data{
+  width: 100vw;
+  height: 170vh;
+  background-image: url("/src/united_car/back.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed; 
+}
+
+.about1{
+  position: absolute;
+  width: 30vw;
+  height: 35vh;
+  background-color:rgba(19, 179, 214, 0.4);
+  left: 1.2vw;
+  bottom: -50vh;
+  border-radius: 5%;
+  border: 2px solid black ;
+  box-shadow: 2px 2px 2px 2px black;
+}
+.about2{
+  position: absolute;
+  width: 30vw;
+  height: 35vh;
+  background-color:rgba(19, 179, 214, 0.4);
+  left: 34vw;
+  bottom: -50vh;
+  border: 2px solid black ;
+  box-shadow: 2px 2px 2px 2px black;
+}
+.about3{
+  position: absolute;
+  width: 30vw;
+  height: 35vh;
+  background-color:rgba(19, 179, 214, 0.4);
+  left: 67vw;
+  bottom: -50vh;
+  border: 2px solid black ;
+  box-shadow: 2px 2px 2px 2px black;
+}
+.sameData div{
+  text-align: center;
+  line-height: 6vh;
+  color: red;
+  font-size: 1.5vw;
+font-weight: 900;
+}
+.sameData p{
+  color: black;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-top: 1vh;
+letter-spacing: 2px;
+word-spacing: 6px;
+font-size: 1.5vw;
+font-weight: 900;
+}
+.contact{
+  bottom: -58vw;
+  position: absolute;
+  width: 60vw;
+  height: 60vh;
+background-color: rgba(5, 105, 235, 0.7);
+border: 1px solid black;
+left:20vw;
+box-shadow: 2px 2px 2px 2px black;
+}
+.contact input{
+  width: 18vw;
+  height: 6vh;
+  font-size: 1.5vw;
+  color: black;
+  padding: 1vh 1vw 1vh 1vw;
+}
+
+.contact textarea{
+  position:absolute;
+  width: 30vw;
+  height: 25vh;
+  color: blue;
+  left: 8vw;
+  bottom: 2vh;
+  padding: 1vh 1vw 1vh 1vw;
+}
+.label1{
+position: absolute;
+top: 5vh;
+left: 5vw;
+}
+.label2{
+  position: absolute;
+  top: 5vh;
+  left: 34vw;
+  }
+
+  .label3{
+    position: absolute;
+    top: 15vh;
+    left: 6vw;
+    }
+    .label4{
+      position: absolute;
+      top: 15vh;
+      left: 35vw;}
+  .label5{
+    position: absolute;
+    bottom: 4vh;
+    left: 2.5vw;
+  }
+  .subit_data{
+    position: absolute;
+    bottom: 5.5vh;
+    right: 5vw;
+    width: 10vw;
+    height: 8vh;
+    background-color: green;
+  }
+  .subit_data:hover
+{
+  box-shadow: 2px 2px 2px 2px black;
+  cursor: pointer;
+}
+
+.servies{
+  bottom: -82vw;
+  position: absolute;
+  width: 100vw;
+  height: 40vh;
+  /* background-color: red; */
+  /* background-color: gray; */
+  background-color: rgba(32, 23, 66, .8);
+}
+.servies .para{
+  width: 40vw;
+  color: white;
+  padding-left: 5vw;
+
+}
+.servies h1{
+  margin-top: 2vh;
+  display: inline-block;
+  width: 40vw;
+  text-align: center;
+  margin-bottom: 5vh;
+  color: white;
+  font-size: 2vw;
+}
+footer{
+  position: absolute;
+  width: 100vw;
+  height: 8vh;
+  background-color: black;
+  bottom: -180vh;
+  text-align: center;
+  line-height: 8vh;
+}
+.ali{
+  width: 18vw;
+  height: 30vh;
+  position: absolute;
+  background-color: violet;
+  right: 5vw;
+  top: 6vh;
+z-index: 100;
+box-shadow: 1.5px 1.5px 1.5px 1.5px white;
+}
+button a{
+text-decoration: none;
+
+}
